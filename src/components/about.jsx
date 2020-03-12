@@ -1,23 +1,16 @@
 import React from "react";
+import { useSpring, animated } from "react-spring";
 
-const About = props => {
-  return (
-    <div class="card bg-dark text-white">
-      <img
-        src={process.env.PUBLIC_URL + "./bg.jpg"}
-        class="card-img"
-        alt="..."
-      />
-      <div class="card-img-overlay">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">
-          This is a wider card with supporting text below as a natural lead-in
-          to additional content. This content is a little bit longer.
-        </p>
-        <p class="card-text">Last updated 3 mins ago</p>
-      </div>
-    </div>
-  );
+const About = () => {
+  const props = useSpring({
+    to: [
+      { opacity: 1, color: "#ffaaee" },
+      { opacity: 0, color: "rgb(14,26,19)" }
+    ],
+    from: { opacity: 0, color: "red" }
+  });
+  // ...
+  return <animated.div style={props}>I will fade in and out</animated.div>;
 };
 
 export default About;
