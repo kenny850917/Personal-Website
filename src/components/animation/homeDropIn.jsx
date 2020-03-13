@@ -70,8 +70,8 @@ const HomeDropIn = () => {
     set([]);
     ref.current.push(setTimeout(() => set([introArray[0]]), 1000));
     ref.current.push(setTimeout(() => set([introArray[1]]), 4000));
-    ref.current.push(setTimeout(() => set([introArray[2]]), 7000));
-    ref.current.push(setTimeout(() => set([introArray[3]]), 8000));
+    ref.current.push(setTimeout(() => set([introArray[2]]), 8000));
+    ref.current.push(setTimeout(() => set([introArray[3]]), 9000));
   }, []);
 
   const resetBody = useCallback(() => {
@@ -82,12 +82,12 @@ const HomeDropIn = () => {
       setTimeout(() => set2([bodyArray[0], bodyArray[1], bodyArray[2]]), 11000)
     );
     ref2.current.push(
-      setTimeout(() => set2([bodyArray[0], bodyArray[2]]), 13000)
+      setTimeout(() => set2([bodyArray[0], bodyArray[2]]), 14000)
     );
     ref2.current.push(
       setTimeout(
         () => set2([bodyArray[4], bodyArray[0], bodyArray[3], bodyArray[2]]),
-        15000
+        18000
       )
     );
   }, []);
