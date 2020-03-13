@@ -2,8 +2,11 @@ html,
 body {
   width: 100%;
   height: 100%;
-  margin: 0;
+  margin: auto;
   padding: 0;
+  position: relative;
+  align-items: center;
+  justify-content: center;
 }
 
 body {
@@ -20,21 +23,20 @@ body {
   background: #f0f0f0;
 }
 
-/* #root {
-  overflow: hidden;
-  margin: 0;
+.main {
+  /* overflow: hidden; */
+  margin: 25% 0 0 0;
   padding: 0;
   position: relative;
   width: 100%;
   height: 100%;
-  display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 }
 
 #root > div {
   width: 400px;
-} */
+}
 
 .transitions-item {
   overflow: hidden;

@@ -5,6 +5,9 @@ import "./styles.css";
 
 const array = ["FullStack Developer", "Web Designer", "Content Producer"];
 
+//intro transition
+
+//content transition
 const Transition = () => {
   const ref = useRef([]);
   const [items, set] = useState([]);

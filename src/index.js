@@ -5,7 +5,6 @@ import "bootstrap/dist/css/bootstrap.css";
 import * as serviceWorker from "./serviceWorker";
 import "./index.css";
 import App from "./App";
-import Transition from "./components/transition";
 
 ReactDOM.render(
   <BrowserRouter>
