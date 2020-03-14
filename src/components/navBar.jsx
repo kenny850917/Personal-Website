@@ -23,8 +23,8 @@ const NavBar = () => {
           <NavLink className="nav-item nav-link" to="/about">
             About
           </NavLink>
-          <NavLink className="nav-item nav-link" to="/resume">
-            Resume
+          <NavLink className="nav-item nav-link" to="/skills">
+            Skills
           </NavLink>
 
           <React.Fragment>
