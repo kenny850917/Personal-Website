@@ -22,16 +22,16 @@ const HomeDropIn = () => {
       opacity: 0,
       height: 0,
       innerHeight: 0,
-      transform: "translate3d(0%,100%,0) rotateX(0deg)",
+      transform: "translate3d(0%,100%,0) rotateY(0deg)",
       color: "#8fa5b6"
     },
     enter: [
       { opacity: 1, height: 80, innerHeight: 80 },
       {
-        transform: " translate3d(0,100%,0) rotateX(180deg)",
+        transform: " translate3d(0,100%,0) rotateY(0deg)",
         color: "#28d79f"
       },
-      { transform: "translate3d(0,0,0) rotateX(0deg)", color: "#f2f2f2" }
+      { transform: "translate3d(0,0,0) rotateY(0deg)", color: "#f2f2f2" }
     ],
     // leave: [
     //   { color: "#c23369" },
