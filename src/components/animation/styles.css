@@ -53,3 +53,14 @@ body {
   cursor: pointer;
   line-height: 80px;
 }
+#card2 {
+  border-style: hidden;
+  width: 20 rem;
+  padding: 60;
+  border-color: transparent;
+  background-color: transparent;
+}
+.col-sm {
+  margin: 20;
+  padding: 10 100 100 10;
+}

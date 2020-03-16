@@ -1,0 +1,21 @@
+.row {
+  font-family: monospace;
+  font-weight: 800;
+  background: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: auto;
+  background: #f0f0f0;
+}
+
+.card-title {
+  font-family: monospace;
+  font-weight: 600;
+  font-size: xx-large;
+  text-align: center;
+  margin: 2em;
+}

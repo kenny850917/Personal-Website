@@ -1,13 +1,10 @@
 import React from "react";
 import PieChart from "react-minimal-pie-chart";
 
-const InsertPieChart = ({ title, percentage, color }) => {
+const InsertPieChart = ({ title, percentage, color, content }) => {
   return (
     <React.Fragment>
-      <div
-        className="card border-secondary"
-        style={({ width: 25 + "rem" }, { padding: 20 })}
-      >
+      <div className="card border-secondary" id="card2">
         <PieChart
           animate={true}
           animationDuration={800}
@@ -37,7 +34,7 @@ const InsertPieChart = ({ title, percentage, color }) => {
         />
         <div className="card-body">
           <h5 className="card-title">{title}</h5>
-          <p className="card-text">Content here</p>
+          <p className="card-text">{content}</p>
         </div>
       </div>
       {/* <h1 className="text-center">{title}</h1> */}
