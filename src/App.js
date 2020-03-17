@@ -16,7 +16,7 @@ class App extends Component {
       <React.Fragment>
         <NavBar />
         <Switch>
-          <main className="container-sm">
+          <main className="container-lg">
             <Route path="/home" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/skills" component={Skills} />

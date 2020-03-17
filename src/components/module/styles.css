@@ -33,10 +33,10 @@ body {
   justify-content: center;
   /* align-items: center; */
 }
-
+/* 
 #root > div {
   width: 400px;
-}
+} */
 
 .transitions-item {
   overflow: hidden;
@@ -55,12 +55,25 @@ body {
 }
 #card2 {
   border-style: hidden;
-  width: 20 rem;
-  padding: 60;
+  width: 21em;
+  padding: em;
+  margin: em;
   border-color: transparent;
   background-color: transparent;
 }
-.col-sm {
-  margin: 20;
-  padding: 10 100 100 10;
+.card-title {
+  margin: auto;
+  padding: 0;
+}
+.col-lg {
+  padding: 1em 0 0 0;
+  margin: 0;
+}
+
+.progress {
+  height: 4em;
+  background-color: rgba(121, 121, 121, 0.418);
+  margin: 2em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
 }
