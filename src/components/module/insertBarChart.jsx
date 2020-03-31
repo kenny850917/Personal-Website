@@ -6,7 +6,7 @@ const InsertBarChart = ({ program, percentage }) => {
     <React.Fragment>
       <div className="progress">
         <div
-          class="progress-bar progress-bar-striped progress-bar-animated"
+          className="progress-bar progress-bar-striped progress-bar-animated"
           role="progressbar"
           style={{ width: percentage + "%" }}
           aria-valuenow="10"
