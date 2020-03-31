@@ -1,0 +1,28 @@
+.row {
+  font-family: monospace;
+  background: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: auto;
+  background: #f0f0f0;
+}
+
+.card-title {
+  font-family: monospace;
+  font-weight: 800;
+  font-size: xx-large;
+  text-align: center;
+  padding: 1em;
+}
+.text-center {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 800;
+}
+#skill {
+  padding: 1em 0 1em 0;
+}
