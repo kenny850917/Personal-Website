@@ -40,7 +40,7 @@ const About = () => {
   return (
     <React.Fragment>
       <div className="home-overlay"></div>
-      <div className="container sm">
+      <div className="container fluid">
         <Tree name={root} defaultOpen>
           {/* edu */}
           <Tree name={type[0]}>

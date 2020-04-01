@@ -36,3 +36,29 @@
     transform: rotate(360deg);
   }
 }
+
+.cardTitle {
+  display: flex;
+
+  justify-content: center;
+}
+.cardText {
+  display: flex;
+
+  justify-content: center;
+}
+
+@media only screen and (max-width: 700px) {
+  .cardTitle {
+    display: flex;
+
+    justify-content: center;
+    font-size: 16px;
+  }
+  .cardText {
+    display: flex;
+
+    justify-content: center;
+    font-size: 12px;
+  }
+}

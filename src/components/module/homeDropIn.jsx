@@ -97,38 +97,44 @@ const HomeDropIn = () => {
 
   return (
     <React.Fragment>
-      <div className="main">
-        <div>
-          {transitions.map(
-            ({ item: intro, props: { innerHeight, ...rest }, key }) => (
-              <animated.div className="transitions-item" key={key} style={rest}>
+      <div className="container-lg">
+        <div className="main">
+          <div>
+            {transitions.map(
+              ({ item: intro, props: { innerHeight, ...rest }, key }) => (
                 <animated.div
-                  style={{ overflow: "hidden", height: innerHeight }}
+                  className="transitions-item"
+                  key={key}
+                  style={rest}
                 >
-                  {intro}
+                  <animated.div
+                    style={{ overflow: "hidden", height: innerHeight }}
+                  >
+                    {intro}
+                  </animated.div>
                 </animated.div>
-              </animated.div>
-            )
-          )}
-        </div>
-        {/* body content */}
-        <div>
-          {contentTransitions.map(
-            ({ item: body, props: { innerHeight, ...rest }, key }) => (
-              <animated.div
-                className="transitions-item"
-                key={key}
-                style={rest}
-                onClick={resetBody}
-              >
+              )
+            )}
+          </div>
+          {/* body content */}
+          <div>
+            {contentTransitions.map(
+              ({ item: body, props: { innerHeight, ...rest }, key }) => (
                 <animated.div
-                  style={{ overflow: "hidden", height: innerHeight }}
+                  className="transitions-item"
+                  key={key}
+                  style={rest}
+                  onClick={resetBody}
                 >
-                  {body}
+                  <animated.div
+                    style={{ overflow: "hidden", height: innerHeight }}
+                  >
+                    {body}
+                  </animated.div>
                 </animated.div>
-              </animated.div>
-            )
-          )}
+              )
+            )}
+          </div>
         </div>
       </div>
     </React.Fragment>

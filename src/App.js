@@ -15,8 +15,8 @@ class App extends Component {
     return (
       <React.Fragment>
         <NavBar />
-        <Switch>
-          <main className="container-lg">
+        <main className="container-fluid">
+          <Switch>
             <Route path="/home" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/skills" component={Skills} />
@@ -24,9 +24,8 @@ class App extends Component {
             <Route path="/contact" component={Contact} />
             <Redirect from="/" exact to="/home" />
             {/* <Redirect to="/not-found" /> */}
-          </main>
-        </Switch>
-        <Footer />
+          </Switch>
+        </main>
       </React.Fragment>
     );
   }

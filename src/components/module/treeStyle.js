@@ -46,6 +46,9 @@ const Frame = styled("div")`
   vertical-align: middle;
   color: white;
   fill: white;
+  @media only screen and (max-width: 700px) {
+    font-size: 18px;
+  }
 `;
 
 const Title = styled("span")`

@@ -1,20 +1,18 @@
 import React from "react";
+import { Card } from "react-bootstrap";
 const Footer = () => {
   return (
-    <div className="fixed-bottom text-white">
-      <div className="card-header">Footer</div>
-      <div className="card-body">
-        <blockquote className="blockquote mb-0">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-            posuere erat a ante.
-          </p>
-          <footer className="blockquote-footer-dark">
-            Someone famous in <cite title="Source Title">Source Title</cite>
-          </footer>
-        </blockquote>
-      </div>
-    </div>
+    <Card className="text-center bg-dark text-white fixed-bottom">
+      <Card.Body>
+        <Card.Title className="cardTitle">
+          Designed with Lots of ☕ and 💗 By Kenny
+        </Card.Title>
+        <Card.Text className="cardText">
+          Powered by react-spring | styled-components | bootstrap
+        </Card.Text>
+      </Card.Body>
+      <Card.Footer className="text-muted"> © 2020 April</Card.Footer>
+    </Card>
   );
 };
 
