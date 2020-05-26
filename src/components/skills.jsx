@@ -2,12 +2,13 @@ import React from "react";
 import InsertPieChart from "./module/insertPieChart";
 import "./components.css";
 import InsertBarChart from "./module/insertBarChart";
+import Footer from "./footer";
 
 const Skills = () => {
   // skills
   const programming = ["Programming", 85, "#c23369"];
   const designing = ["Designing", 90, "#c23369"];
-  const debugging = ["Degugging", 68, "#c23369"];
+  const debugging = ["Debugging", 68, "#c23369"];
   const creativity = ["Creativity", 89, "#c23369"];
   //programs
   const java = [80, "Java"];
@@ -120,6 +121,7 @@ const Skills = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </React.Fragment>
   );
 };

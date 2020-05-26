@@ -36,29 +36,26 @@
     transform: rotate(360deg);
   }
 }
-
-.cardTitle {
+.card-title {
   display: flex;
-
   justify-content: center;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
 }
+@media only screen and (max-width: 700px) {
+  .card-title {
+    font-size: 10px;
+  }
+}
+
 .cardText {
   display: flex;
-
   justify-content: center;
 }
-
 @media only screen and (max-width: 700px) {
-  .cardTitle {
-    display: flex;
-
-    justify-content: center;
-    font-size: 16px;
+  cardText {
+    font-size: 8px;
   }
-  .cardText {
-    display: flex;
-
-    justify-content: center;
-    font-size: 12px;
-  }
+  /* font-size: 12px; */
 }

@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect, useCallback } from "react";
 import { useTransition, animated } from "react-spring";
-import "./styles.css";
+import "./styles.scss";
 
 const introArray = ["Hello my name is", "Kenny Ho", "I am a...", " "];
 const bodyArray = [
@@ -8,7 +8,7 @@ const bodyArray = [
   "Content Producer",
   "Web Designer",
   "Casual Gamer",
-  "Computer Scientist"
+  "Computer Scientist",
 ];
 
 const HomeDropIn = () => {
@@ -23,15 +23,15 @@ const HomeDropIn = () => {
       height: 0,
       innerHeight: 0,
       transform: "translate3d(0%,100%,0) rotateY(0deg)",
-      color: "#8fa5b6"
+      color: "#8fa5b6",
     },
     enter: [
       { opacity: 1, height: 80, innerHeight: 80 },
       {
         transform: " translate3d(0,100%,0) rotateY(0deg)",
-        color: "#28d79f"
+        color: "#28d79f",
       },
-      { transform: "translate3d(0,0,0) rotateY(0deg)", color: "#f2f2f2" }
+      { transform: "translate3d(0,0,0) rotateY(0deg)", color: "#f2f2f2" },
     ],
     // leave: [
     //   { color: "#c23369" },
@@ -39,7 +39,7 @@ const HomeDropIn = () => {
     //   { opacity: 0, height: 0 },
     //   { transform: "translate3d(0,0,0) rotateX(0deg)" }
     // ],
-    update: { color: "#c23369" }
+    update: { color: "#c23369" },
   });
   //content transition
   const contentTransitions = useTransition(items2, null, {
@@ -48,20 +48,20 @@ const HomeDropIn = () => {
       height: 0,
       innerHeight: 0,
       transform: "perspective(600px) rotateX(0deg)",
-      color: "#8fa5b6"
+      color: "#8fa5b6",
     },
     enter: [
       { opacity: 1, height: 80, innerHeight: 80 },
       { transform: "perspective(600px) rotateX(180deg)", color: "#28d79f" },
       { transform: "perspective(600px) rotateX(0deg)" },
-      { transform: "perspective(600px) rotateX(0deg)" }
+      { transform: "perspective(600px) rotateX(0deg)" },
     ],
     leave: [
       { color: "#c23369" },
       { innerHeight: 0 },
-      { opacity: 0, height: 0 }
+      { opacity: 0, height: 0 },
     ],
-    update: { color: "#28b4d7" }
+    update: { color: "#28b4d7" },
   });
 
   const resetIntro = useCallback(() => {

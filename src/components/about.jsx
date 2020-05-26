@@ -2,6 +2,7 @@ import React from "react";
 import { useSpring, animated } from "react-spring";
 import { Global } from "./module/treeStyle";
 import Tree from "./module/tree";
+import Footer from "./footer";
 
 const root = "About Me";
 const type = ["Education", "Experiences", "Resume"];
@@ -13,28 +14,28 @@ const edu = {
     "🤖 Artificial Intelligence",
     "📊 Data Structure",
     "🖧 Networking",
-    "🚧 Project Management"
-  ]
+    "🚧 Project Management",
+  ],
 };
 const exp = {
   name: ["Full-stack Developer", "Inventory Management"],
   details: [
     "🏴󠁬󠁲󠁧󠁰󠁿 with UBC<=>Start Fresh Kitchen @ Kelowna, BC",
-    "🏴󠁬󠁲󠁧󠁰󠁿 with NCIX@ Burnaby, BC"
-  ]
+    "🏴󠁬󠁲󠁧󠁰󠁿 with NCIX@ Burnaby, BC",
+  ],
 };
 
 const resume = {
-  link: ["📜 resume link"]
+  link: ["📜 resume link"],
 };
 
 const About = () => {
   const props = useSpring({
     to: [
       { opacity: 1, color: "#ffaaee" },
-      { opacity: 0, color: "rgb(14,26,19)" }
+      { opacity: 0, color: "rgb(14,26,19)" },
     ],
-    from: { opacity: 0, color: "red" }
+    from: { opacity: 0, color: "red" },
   });
   // ...
   return (
@@ -69,6 +70,7 @@ const About = () => {
           {/* end of root */}
         </Tree>
       </div>
+      <Footer type={"fixed"} />
     </React.Fragment>
   );
 };

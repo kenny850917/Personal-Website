@@ -3,13 +3,14 @@ import Footer from "./footer";
 import { render } from "react-dom";
 import { useTransition, animated } from "react-spring";
 import HomeDropIn from "./module/homeDropIn";
+import "./home.scss";
 
-const Home = props => {
+const Home = (props) => {
   return (
     <React.Fragment>
       <div className="home-overlay"></div>
       <HomeDropIn />
-      <Footer />
+      <Footer type={"fixed"} />
       {/* <Transition /> */}
     </React.Fragment>
   );
