@@ -10,7 +10,7 @@
     "bootstrap": "^4.4.1",
     "fontawesome": "^5.6.3",
     "mdbreact": "^4.25.3",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "npm-add-dependencies": "^0.3.1",
     "react": "^16.13.0",
     "react-animated-css": "^1.2.1",
